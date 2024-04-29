@@ -1,38 +1,67 @@
 import React from "react";
-import HomeIcon from "@mui/icons-material/Home";
+import PeopleAltRoundedIcon from "@mui/icons-material/PeopleAltRounded";
+import BuildRoundedIcon from "@mui/icons-material/BuildRounded";
+import ShopTwoIcon from "@mui/icons-material/ShopTwo";
+import AssessmentRoundedIcon from "@mui/icons-material/AssessmentRounded";
+import SettingsRoundedIcon from "@mui/icons-material/SettingsRounded";
+import AppSettingsAltRoundedIcon from "@mui/icons-material/AppSettingsAltRounded";
+import LogoutRoundedIcon from "@mui/icons-material/LogoutRounded";
+import EngineeringRoundedIcon from "@mui/icons-material/EngineeringRounded";
+import PersonRoundedIcon from "@mui/icons-material/PersonRounded";
+import DashboardRoundedIcon from "@mui/icons-material/DashboardRounded";
 import "../App.css";
 
 function Sidebar() {
   const sidebarData = [
     {
       title: "Home",
-      icon: <HomeIcon />,
+      icon: <DashboardRoundedIcon />,
       link: "/home",
     },
     {
       title: "Reparaciones",
-      icon: <HomeIcon />,
+      icon: <BuildRoundedIcon />,
       link: "/reparaciones",
     },
     {
       title: "Clientes",
-      icon: <HomeIcon />,
+      icon: <PeopleAltRoundedIcon />,
       link: "/clientes",
     },
     {
       title: "Repuestos",
-      icon: <HomeIcon />,
+      icon: <AppSettingsAltRoundedIcon />,
       link: "/repuestos",
     },
     {
       title: "Proveedores",
-      icon: <HomeIcon />,
+      icon: <PersonRoundedIcon />,
       link: "/proveedores",
     },
     {
+      title: "Técnicos",
+      icon: <EngineeringRoundedIcon />,
+      link: "/tecnicos",
+    },
+    {
       title: "Compras",
-      icon: <HomeIcon />,
+      icon: <ShopTwoIcon />,
       link: "/compras",
+    },
+    {
+      title: "Estadísticas",
+      icon: <AssessmentRoundedIcon />,
+      link: "/estadisticas",
+    },
+    {
+      title: "Configuración",
+      icon: <SettingsRoundedIcon />,
+      link: "/configuracion",
+    },
+    {
+      title: "Cerrar sesión",
+      icon: <LogoutRoundedIcon />,
+      link: "/login",
     },
   ];
 
